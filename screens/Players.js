@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View,SafeAreaView } from 'react-native';
 import CustomInput from '../components/CustomInput';
 import KeyboardAwareScrollView from '../components/KeyboardAwareScrollView';
+import { PRIMARY_COLOR } from '../theme/default';
 
 export default function Players ({navigation}) {
 
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     paddingVertical:15,
     borderRadius:5,
     marginVertical:45,
-    backgroundColor:'dodgerblue'
+    backgroundColor:PRIMARY_COLOR
   },
   contentContainer:{
     flex:0.7,

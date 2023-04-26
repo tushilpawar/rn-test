@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TouchableOpacity,StyleSheet,Text, View } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
+import { PRIMARY_COLOR } from '../theme/default';
 
 function PlayerCard ({title, isLast}){
     const[wins,setWins]= useState(0)
@@ -18,8 +19,8 @@ function PlayerCard ({title, isLast}){
             }
         }
         >
-            <AntDesign name="plus" size={12} color="blue" />
-            <Text style={{color:'blue'}}>
+            <AntDesign name="plus" size={12} color={PRIMARY_COLOR}/>
+            <Text style={{color:PRIMARY_COLOR}}>
                 Add Win
             </Text>
         </TouchableOpacity>
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding:15,
         borderRadius:5,
-        borderColor:'blue',
+        borderColor:PRIMARY_COLOR,
         flexDirection:'row',
         
       },
